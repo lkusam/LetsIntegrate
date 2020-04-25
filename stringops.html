@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <link rel="stylesheet" href=".css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="title">Welcome to the String Operations</div>
+            <a class="tooltipped" data-position="bottom" data-tooltip="Go Home" href="/index.html">
+                <i class="material-icons">home</i>
+            </a>
+        </div>
+        <div class="fromcontrol"><textarea name="textarea" id="userinput" cols="30" rows="10"></textarea></div>
+        <div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card light-blue darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Length</span>
+                            <label id="lengthres" class="flow-text white-text"></label></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card light-blue darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Encode</span>
+                            <label id="encoderes" class="flow-text white-text"></label></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card light-blue darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Decode</span>
+                            <label id="decoderes" class="flow-text white-text"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: Need to add box for REGEX -->
+                <!-- TODO: Need to Grab links from the Text inserted-->
+                <!-- TODO: Put the word count and when clicked show the word count-->
+                <!-- TODO: Add support to the split and other commands -->
+            </div>
+        </div>
+    </div>
+    <script src="/JS/stringops.js"></script>
+</body>
+
+</html>
