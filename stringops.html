@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.co/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.co/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.co/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>String Operations</title>
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="/CSS/stringsops.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -16,48 +20,79 @@
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <div class="title">Welcome to the String Operations</div>
-            <a class="tooltipped" data-position="bottom" data-tooltip="Go Home" href="/index.html">
-                <i class="material-icons">home</i>
-            </a>
+    <nav>
+        <div class="nav-wrapper">
+            <span class=" brand-logo"> Welcome</span>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stringops.html">Strings</a></li>
+                <li><a href="salarygrowthestimator.html">Salary Growth Estimator</a></li>
+            </ul>
         </div>
+    </nav>
+     <ul id="modile-nav" class="sidenav">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="stringops.html">Strings</a></li>
+         <li><a href="salarygrowthestimator.html">Salary Growth Estimator</a></li>
+     </ul>
+    <div class="container">
+        <h2 class=" teal-text">Welcome to the String Operations</h2>
         <div class="fromcontrol"><textarea name="textarea" id="userinput" cols="30" rows="10"></textarea></div>
         <div>
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="card light-blue darken-2">
-                        <div class="card-content white-text">
+                    <div class="card">
+                        <div class="card-content">
                             <span class="card-title">Length</span>
-                            <label id="lengthres" class="flow-text white-text"></label></span>
+                            <label id="lengthres" class=""></label></span>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card light-blue darken-2">
-                        <div class="card-content white-text">
+                    <div class="card">
+                        <div class="card-content">
                             <span class="card-title">Encode</span>
-                            <label id="encoderes" class="flow-text white-text"></label></span>
+                            <label id="encoderes" class=""></label></span>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card light-blue darken-2">
-                        <div class="card-content white-text">
+                    <div class="card">
+                        <div class="card-content">
                             <span class="card-title">Decode</span>
-                            <label id="decoderes" class="flow-text white-text"></label>
+                            <label id="decoderes" class=""></label>
                         </div>
                     </div>
+                    <!-- TODO: Need to add box for REGEX -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Match Regex</span>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions"
+                                    target="_blank">REGEX Help</a>
+                                <div class="input-field">
+                                    <input type="text" name="givenRegex" id="regex_given">
+                                    <label for="regex_given">Please enter the REGEX</label>
+                                </div>
+                                <label for="" id="regex_result">No Regex</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TODO: Need to Grab links from the Text inserted-->
+                    <!-- TODO: Put the word count and when clicked show the word count-->
+                    <!-- TODO: Add support to the split and other commands -->
                 </div>
-                <!-- TODO: Need to add box for REGEX -->
-                <!-- TODO: Need to Grab links from the Text inserted-->
-                <!-- TODO: Put the word count and when clicked show the word count-->
-                <!-- TODO: Add support to the split and other commands -->
             </div>
         </div>
-    </div>
-    <script src="/JS/stringops.js"></script>
+            <div class="footer-copyright">
+                <div class="container">
+                    Developer : <a class="brown-text text-lighten-3"
+                        href="https://www.linkedin.com/in/lakshma-reddy-708473100/">Lakshma kusam</a><br>
+                    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                </div>
+            </div>
+            </footer>
+        <script src="/JS/stringops.js"></script>
 </body>
 
 </html>

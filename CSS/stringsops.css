@@ -1,0 +1,11 @@
+.card {
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    font-size: larger;
+    font-style: italic;
+    background-color: rgba(81, 201, 155, 0.849);
+}
