@@ -1,0 +1,18 @@
+2020-04-17 02:11:14,560 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2020-04-17 02:11:14,564 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'firewall_rules']
+2020-04-17 02:11:14,586 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'firewall-rules', u'list']
+2020-04-17 02:11:14,590 DEBUG    root            Running [gcloud.compute.firewall-rules.list] with arguments: []
+2020-04-17 02:11:14,792 INFO     root            Display format: "    table(
+      name,
+      network.basename(),
+      direction,
+      priority,
+      allowed[].map().firewall_rule().list():label=ALLOW,
+      denied[].map().firewall_rule().list():label=DENY,
+      disabled
+    )"
+2020-04-17 02:11:27,381 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+
